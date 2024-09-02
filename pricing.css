@@ -1,0 +1,112 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'rubik', sans-serif;
+}
+.princing-container{
+   padding: 9.6rem 0;
+   /* background-color: aqua;*/
+}
+.plan-model{
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 1.8rem;
+    text-transform: uppercase;
+    color: #cf711f;
+}
+.plan-price{
+    font-size: 4.8rem;
+    font-weight: 650;
+    color: #000;
+    margin-bottom: 1.8rem;
+}
+.plan-price span{
+    font-size: 2.5rem;
+    
+}
+.plan-description{
+    font-size: 1.4rem;
+    font-weight: 300;
+    color: #6f5f6f;
+    margin-bottom: 4.8rem;
+}
+.plan-box{
+   text-align: center;
+}
+
+.pricing-plan{
+    border-radius: 11px;
+    width: 75%;
+}
+.princing-plan-starter{
+justify-self: end;
+border: 2px solid #fdf2e9;
+padding: 4.6rem; /*foi colocado menos pois com os 2px da borda, será compensado, se não dará diferença na altura dos botoes*/
+}
+
+.pricing-plan-complete{
+    background-color: #fdf2e9;
+    padding: 4.8rem;
+    position: relative;
+    overflow: hidden;/*para esconder as pontas que ficaram sobrando, no best value*/
+
+}
+.pricing-plan-complete:after{
+   content:'best value';
+   position: absolute;
+   font-size: 1.4rem;
+   font-weight: 700;
+   top: 6%;/*primeiro colocar top 0 e right 0, para depois usar o transform e colocar a medida que quiser*/
+   right: -15%;
+   background-color: #ffd43b;
+   color: #333;
+   padding: 0.8rem 8rem;
+   text-transform: uppercase;
+   transform: rotate(45deg);
+    
+}
+
+
+.btn-plan{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 4.8rem;
+}
+.btn-container{
+  text-align: center;
+  
+}
+.plan-details{
+    font-size: 1.8rem;
+    line-height: 1.8;
+    text-align: center;
+    margin-bottom: 9.6rem;
+}
+
+.featured-icon{
+    color: #e67e22;
+    height: 3.2rem;
+    width: 3.2rem;
+    background-color: #fdf2e9;
+    padding: 1.6rem;
+    border-radius: 50%;
+    margin-bottom: 3.2rem;
+}
+.featured-title{
+   font-size: 2.4rem;
+   color: #333;
+   font-weight: 700;
+   margin-bottom: 1.8rem;
+}
+.featured-text{
+    font-size: 1.8rem;
+    line-height: 1.8;
+}

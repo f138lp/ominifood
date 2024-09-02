@@ -1,0 +1,332 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+body {
+  font-family: "rubik", sans-serif;
+}
+.section-hero {
+  background-color: #fdf2e9;
+  padding: 4.8rem 0 9.6rem 0;
+}
+.hero {
+  margin: 0 auto;
+  max-width: 130rem;
+  padding: 0 3.2rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 9.6rem;
+}
+
+.heading-primary,
+.heading-secondary,
+.heading-tertiary {
+  font-weight: 700;
+  letter-spacing: -0.5px;
+
+  color: #333;
+}
+.heading-primary {
+  font-size: 5.2rem;
+  margin-bottom: 3.2rem;
+  line-height: 1.05;
+}
+
+.heading-secondary {
+  font-size: 4.4rem;
+  line-height: 1.2;
+  margin-bottom: 9.6rem;
+}
+
+.heading-tertiary {
+  font-size: 3rem;
+  line-height: 1.2;
+  margin-bottom: 3.2rem;
+}
+
+.subheading {
+  font-size: 2rem;
+  display: block;
+  color: #cf711f;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-bottom: 1.6rem;
+  letter-spacing: 0.75px;
+}
+.hero-description {
+  font-size: 2rem;
+  line-height: 1.5;
+  margin-bottom: 4.8rem;
+}
+.hero-img {
+  width: 100%;
+}
+
+.btn,
+.btn:link,
+.btn:visited {
+  display: inline-block;
+  text-decoration: none;
+  font-size: 2rem;
+  border-radius: 9px;
+  border: none;
+  cursor: pointer;
+  padding: 1.6rem 3.2rem;
+  transition: all 0.3s;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 1.2rem;
+  transition: all 0.5s;
+}
+
+.btn--form:hover {
+  background-color: #fff;
+  color: #555;
+}
+
+.btn-principal:link,
+.btn-principal:visited {
+  background-color: #e67e22;
+  color: #fff;
+}
+.btn-principal:hover,
+.btn-principal:active {
+  background-color: #cf711f;
+}
+.btn-more:link,
+.btn-more:visited {
+  background-color: #fff;
+  color: #555;
+}
+.btn-more:hover,
+.btn-more:active {
+  background-color: #fdf2e9;
+  /*truque para adicionar borda e não mudar as dimensões do projeto/border inside*/
+  box-shadow: inset 0 0 0 3px #fff;
+}
+.margin-sm-right {
+  margin-right: 1.6rem !important;
+}
+.delivered-meals {
+  display: flex;
+  align-items: center;
+  margin-top: 8rem;
+  gap: 1.6rem;
+}
+.delivered-imgs {
+  display: flex;
+}
+.delivered-imgs img {
+  height: 4.8rem;
+  border-radius: 50%;
+  width: 4.8rem;
+  margin-right: -1.6rem;
+  border: 3px solid #fdf2e9;
+}
+.delivered-imgs img:last-child {
+  margin: 0;
+}
+.delivered-text {
+  font-size: 1.8rem;
+  font-weight: 600;
+}
+.delivered-text span {
+  color: #cf711f;
+}
+
+/********header***********/
+
+.logo {
+  height: 2.2rem;
+}
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fdf2e9;
+  height: 9.6rem;
+
+  padding: 0 4.8rem;
+}
+.main-nav-list {
+  list-style: none;
+  display: flex;
+
+  gap: 3.2rem;
+}
+.main-nav-link:link,
+.main-nav-link:visited {
+  text-decoration: none;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.8rem;
+  transition: all 0.3s;
+}
+.main-nav-link:hover,
+.main-nav-link:active {
+  color: #cf711f;
+}
+.main-nav-link.nav-cta:link,
+.main-nav-link.nav-cta:visited {
+  padding: 1.2rem 2.4rem;
+  color: #fff;
+  background-color: #e67e22;
+  border-radius: 9px;
+}
+.main-nav-link.nav-cta:hover,
+.main-nav-link.nav-cta:active {
+  background-color: #cf711f;
+}
+/**********how it works section***************/
+
+.section-how {
+  padding: 9.6rem 0;
+}
+
+.step-img {
+  width: 35%;
+}
+
+.step-number {
+  font-size: 8.6rem;
+  font-weight: 600;
+  color: #ddd;
+  margin-bottom: 1.2rem;
+}
+.step-description {
+  font-size: 1.8rem;
+  line-height: 1.8;
+}
+.step-img-box {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.step-img-box::before,
+.step-img-box::after {
+  position: absolute;
+  content: "";
+  border-radius: 50%;
+  /*left: 50%;
+    top: 50%;
+   */
+}
+
+.step-img-box::before {
+  width: 65%;
+  padding-bottom: 65%;
+  background-color: #fdf2e9;
+  z-index: -2;
+}
+.step-img-box::after {
+  width: 40%;
+  padding-bottom: 40%;
+  background-color: #e4dad2;
+  z-index: -1;
+} /************section-featured-in***************/
+.section-featured {
+  padding: 4.8rem 0 3.2rem 0;
+}
+.heading-featured-in {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 1.4rem;
+  letter-spacing: 0.75px;
+  font-weight: 500;
+  margin-bottom: 2.4rem;
+  color: #999;
+}
+.logos {
+  display: flex;
+  justify-content: space-around;
+}
+.logos img {
+  height: 3.2rem;
+  filter: brightness(0);
+  opacity: 50%;
+}
+
+/***********classes utilitarias***********/
+.margin-bottom-md {
+  margin-bottom: 4.8rem !important;
+}
+.grid {
+  display: grid;
+  column-gap: 6.4rem;
+  row-gap: 9.6rem;
+  margin-bottom: 9.6rem;
+}
+
+/*.grid:last-child{/*quando o grid for o ultimo filho da seção. não aplicar margem
+    margin-bottom:0;
+}*/
+
+.grid:not(:last-child) {
+  /*forma alternativa de dizer a mesma coisa do que acima*/
+  margin-bottom: 9.6rem;
+}
+.grid-align-vert {
+  align-items: center;
+}
+.grid-column-2 {
+  grid-template-columns: repeat(2, 1fr);
+}
+.grid-column-3 {
+  grid-template-columns: repeat(3, 1fr);
+}
+.grid-column-4 {
+  grid-template-columns: repeat(4, 1fr);
+}
+.grid-column-5 {
+  grid-template-columns: repeat(5, 1fr);
+}
+
+.container {
+  max-width: 120rem;
+  padding: 0 3.2rem;
+  margin: 0 auto;
+}
+.strong {
+  font-weight: 500;
+}
+
+/******links*********/
+
+.link:link,
+.link:visited {
+  display: inline-block;
+  color: #e67e22;
+  text-decoration: none;
+  border-bottom: 1px solid currentColor;
+  padding-bottom: 2px;
+  transition: all 0.3s;
+}
+
+.link:hover,
+.link-active {
+  color: #cf711f;
+  border-bottom: 1px solid transparent; /*algumas vezes colocando só none, o 1 px que será retirado da borda interfere no resto da pagina*/
+}
+
+*:focus {
+  outline: none; /*tira a borda em volta dos botões fica ruim para acessibilidade, então faremos algo melhor*/
+  /* outline: 4px dotted #e67e22 ;
+    outline-offset: 8px; não ficou tão bom, outra alternativa*/
+  box-shadow: 0 0 0 0.8rem rgba(230, 125, 34, 0.5);
+}
+
+/**aligns**/
+.center-text {
+  text-align: center;
+}

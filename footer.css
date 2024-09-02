@@ -1,0 +1,91 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+body{
+    font-family: 'rubik', sans-serif;
+}
+.footer-grid{
+ 
+    grid-template-columns: 1.5fr 1.5fr 1fr 1fr 1fr;
+}
+.footer{
+    padding:12.8rem 0;border-top: 1px solid #eee;
+   
+}
+.footer-nav, .social-link{
+    list-style: none;
+}
+.logo-col, .copyright{
+   text-align: center;
+}
+
+.logo-col{
+    display: flex;
+    flex-direction: column;
+    /*fizems isso para depois o conteudo do copyright se ajustar automaticamente, agora só precisa colocar margin-top auto*/
+}
+
+.copyright{
+    font-size: 1.4rem;
+    line-height: 1.6;
+    color: #767676;
+    margin-top: auto;
+}
+
+.footer-logo{
+    display: block;
+    margin-bottom: 4.2rem;
+}
+
+.social-link{
+    display: flex;
+    flex-direction: row;
+    gap: 2.4rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.social-icon{
+    height: 2.4rem;
+    width: 2.4rem;
+}
+
+.footer-nav{
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+}
+.footer-heading {
+    font-size: 1.8rem;
+    font-weight: 500;
+    margin-bottom: 4.2rem;
+}
+
+.footer-links:link,
+.footer-links:visited{
+    text-decoration: none;
+    font-size: 1.6rem;
+    color: #767676;
+    transition: all 0.3s;
+}
+
+.footer-links:hover,
+.footer-links:active{
+   color: #555;
+}
+
+.contact{
+    font-style: normal;
+    line-height: 1.6;
+    font-size: 1.4rem;
+}
+
+.contact p:first-child{
+margin-bottom: 2.4rem;
+}
